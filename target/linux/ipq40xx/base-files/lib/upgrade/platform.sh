@@ -25,6 +25,7 @@ Once this is done. Retry.
 EOF
 		return 1
 		;;
+	zte,mf289f |\		
 	zte,mf286d)
 		CI_UBIPART="rootfs"
 		local mtdnum="$( find_mtd_index $CI_UBIPART )"

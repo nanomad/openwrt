@@ -27,6 +27,9 @@ mikrotik,hap-ac3)
 zte,mf286d)
 	ucidef_add_gpio_switch "power_btn_block" "Power button blocker" "421" "0"
 	;;
+zte,mf289f)
+	ucidef_add_gpio_switch "power_btn_block" "Power button blocker" "421" "0"
+	;;
 esac
 
 board_config_flush

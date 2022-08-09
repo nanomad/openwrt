@@ -1031,6 +1031,19 @@ define Device/zte_mf286d
 endef
 TARGET_DEVICES += zte_mf286d
 
+define Device/zte_mf289f
+        $(call Device/FitzImage)
+        DEVICE_VENDOR := ZTE
+        DEVICE_MODEL := MF289F
+        SOC := qcom-ipq4019
+        DEVICE_DTS_CONFIG := config@ap.dk04.1-c1
+        BLOCKSIZE := 128k
+        PAGESIZE := 2048
+        KERNEL_IN_UBI := 1
+        DEVICE_PACKAGES := kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi
+endef
+TARGET_DEVICES += zte_mf289f
+
 define Device/zyxel_nbg6617
 	$(call Device/FitImageLzma)
 	DEVICE_VENDOR := ZyXEL
